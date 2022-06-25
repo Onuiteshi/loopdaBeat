@@ -20,6 +20,7 @@ import {
   Barlow_700Bold_Italic,
 } from "@expo-google-fonts/barlow";
 import Login from "./screens/Auth/Login";
+import SignUp from "./screens/SignUp";
 import Bg from "./assets/bg1.png";
 
 export default function App() {
@@ -36,14 +37,8 @@ export default function App() {
   return (
     <SafeAreaProvider style={styles.container}>
       {/* <StatusBar hidden={true} /> */}
-      <ImageBackground
-        resizeMode="cover"
-        source={Bg}
-        style={[StyleSheet.absoluteFillObject, styles.bg]}
-      >
-        <View style={styles.overlay} />
-        <Login />
-      </ImageBackground>
+      <SignUp />
+        
     </SafeAreaProvider>
   );
 }
