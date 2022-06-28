@@ -11,7 +11,8 @@ import Logo from "../../../assets/logo2.png";
 import CustomInput from "../../../components/CustomInput";
 import Checkbox from "expo-checkbox";
 import CustomButton from "../../../components/CustomButton";
-
+import { assets } from "../../../assets";
+import Background from "../../../components/BackGround";
 const Login = () => {
   const { height } = useWindowDimensions();
   const [username, setUsername] = useState("");
@@ -22,14 +23,20 @@ const Login = () => {
   const onSignUpPress = () => console.warn("Sign Up");
 
   return (
+    <Background
+      style={{ justifyContent: "flex-start", padding: 40 }}
+      image={assets.splashBackground}
+      gradients={["rgba(103,27,88,.8)", "transparent"]}
+    >
     <View style={styles.container}>
+      
       <View
         style={{
           alignItems: "center",
         }}
       >
         <Image
-          source={Logo}
+          source={assets.logoSmall}
           style={[styles.logo, { height: height * 0.15 }]}
           resizeMode="contain"
         />
@@ -102,6 +109,7 @@ const Login = () => {
         />
       </View>
     </View>
+    </Background>
   );
 };
 
@@ -111,18 +119,22 @@ const styles = StyleSheet.create({
   container: {
     padding: 50,
   },
-  logo: {
-    width: "60%",
-    maxWidth: 300,
-    maxHeight: 200,
-    alignItems: "center",
-  },
+  
   loginHeader: {
     fontFamily: "Regular",
     fontSize: 35,
     color: "#fff",
   },
+  headerText: {
+    fontFamily: "Regular",
+    fontSize: 35,
+    color: "#fff",
+  },
   loginContainer: {
+    marginTop: 50,
+    alignItems: "center",
+  },
+  headerContainer: {
     marginTop: 50,
     alignItems: "center",
   },
