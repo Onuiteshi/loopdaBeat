@@ -3,7 +3,6 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 import Background from '../../components/BackGround'
 import ScreenHeader from '../../components/ScreenHeader'
 import { LinearGradient } from 'expo-linear-gradient'
-import SongItems from '../../components/SongItems'
 import Checkbox from "expo-checkbox";
 import { assets } from '../../assets'
 
