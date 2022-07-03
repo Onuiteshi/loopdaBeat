@@ -13,7 +13,7 @@ function Search() {
   return (
     <View>
       <Image
-        source={assets.logo}
+        source={assets.Logo}
         style={[ { height: height * 0.15 }]}
         resizeMode="contain"
       />
