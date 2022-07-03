@@ -3,8 +3,9 @@ import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
     SHcontainer:{
-        flex:1,
-        justifyContent:'space-around',
-        alignItems:'center'
+        justifyContent:'space-between',
+        alignItems:'center',
+        marginTop:40,
+        width:'100%'
     }
 })

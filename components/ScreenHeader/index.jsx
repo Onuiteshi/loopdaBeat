@@ -11,7 +11,7 @@ function ScreenHeader(props){
                 <Image style= {props.imageStyle} source={props.image}/>
             </View>
             {
-                props.headerText && <View><Text style= {props.textStyle}> {props.headerText} </Text></View>
+                props.headerText && <View style={{width:'100%', alignItems:'center'}}><Text style= {[props.textStyle, {width:'100%', textAlign:'center'}]}> {props.headerText} </Text></View>
             }
         </View>
     )
