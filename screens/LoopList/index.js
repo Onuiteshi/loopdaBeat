@@ -10,7 +10,7 @@ function LoopList() {
     <Background
       style={{ justifyContent: "flex-start" }}
       image={assets.splashBackground}
-      gradients={["rgba(103,27,88,.8)", "transparent"]}
+      gradients={["rgba(30, 34, 64, 0.8)", "rgba(30, 34, 64, 0.8)"]}
     >
       <ScreenHeader
         imageStyle={{ width: 138, height: 112 }}

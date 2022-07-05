@@ -20,18 +20,18 @@ const Login = (props) => {
   const [isSelected, setSelection] = useState(false);
 
   const onSignInPress = () => {
-    props.setIsLoggedIn(true);
+    // props.setIsLoggedIn(true);
+    props.navigation.navigate("Tabs");
   };
   const onSignUpPress = () => {
-    console.log(props);
-    props.navigation.navigate("Signup");
+    props.navigation.navigate("SignUp");
   };
 
   return (
     <Background
       style={{ justifyContent: "flex-start", padding: 40 }}
       image={assets.splashBackground}
-      gradients={["rgba(103,27,88,.8)", "transparent"]}
+      gradients={["rgba(30, 34, 64, 0.8)", "rgba(30, 34, 64, 0.8)"]}
     >
       <View
         style={{
@@ -88,6 +88,7 @@ const Login = (props) => {
             alignItems: "center",
             backgroundColor: "#20C595",
             borderRadius: 50,
+            marginLeft: 20,
           }}
           text="Login"
           onPress={onSignInPress}
