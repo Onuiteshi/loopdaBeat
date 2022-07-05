@@ -10,7 +10,7 @@ function SearchCategorys(props){
         <View style={{justifyContent:'flex-start', width:'100%' }}>
             {categories.map(({text, andriodIcon, iosIcon, onPress }, key) =>
             
-            <SearchCategory text={text} andriodIcon={andriodIcon} iosIcon={iosIcon} onPress={onPress} key={key} />
+            <SearchCategory {...props} text={text} andriodIcon={andriodIcon} iosIcon={iosIcon} onPress={onPress} key={key} />
             
             )}
         

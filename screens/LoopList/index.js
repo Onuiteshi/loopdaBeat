@@ -26,7 +26,7 @@ function LoopList() {
         }}
         height={height * 0.22}
       />
-      <SongItems />
+      {/* <SongItems /> */}
     </Background>
   );
 }

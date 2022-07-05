@@ -1,48 +1,31 @@
-import {
-  TextInput,
-  Text,
-  View,
-  Image,
-  useWindowDimensions,
-} from "react-native";
-import { assets } from "../../assets";
-import Navigation from "../../components/Navigation";
+import { createStackNavigator } from "@react-navigation/stack";
+import SearchByArtist from "./ByArtist";
+import SearchByCategory from "./ByCategory";
+import SearchBySongs from "./ArtistSongs";
 
+const Stack = createStackNavigator();
 function Search() {
-  const { height } = useWindowDimensions();
   return (
-    <View>
-      <Image
-        source={assets.Logo}
-        style={[ { height: height * 0.15 }]}
-        resizeMode="contain"
-      />
-      <Text > SEARCH CATEGORY</Text>
-      <Navigation />
+  <Stack.Navigator>
 
-      {/* <View>
-        <View>
-          <TextInput></TextInput>
-        </View>
+    <Stack.Group screenOptions={{ headerShown: false }}>
+      <Stack.Screen name='SearchByCategory'>
+            {(props) => <SearchByCategory {...props} />}
+      </Stack.Screen>
+      <Stack.Screen name='SearchByArtist'>
 
-        <View>
-          <Text> Playlist </Text>
-        </View>
+            {(props) => <SearchByArtist {...props} />}
+      </Stack.Screen>
+      <Stack.Screen name='SearchBySongs'>
+            {(props) => <SearchBySongs {...props} />}
 
-        <View>
-          <Text> Artist </Text>
-        </View>
+      </Stack.Screen>
 
-        <View>
-          <Text> Genre</Text>
-        </View>
+    </Stack.Group>
+  </Stack.Navigator>
 
-        <View>
-          <Text> Songs </Text>
-        </View>
-      </View> */}
-    </View>
-  );
+)
 }
 
-export default Search;
+export default Search
+  

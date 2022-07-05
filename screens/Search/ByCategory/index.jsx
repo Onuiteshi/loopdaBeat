@@ -12,7 +12,7 @@ import Background from "../../../components/BackGround";
 import ScreenHeader from "../../../components/ScreenHeader";
 import SearchInput from "../../../components/SearchInput";
 import MyTabs from "../../../components/Tab";
-function SearchByCategory() {
+function SearchByCategory(props) {
   const { height } = useWindowDimensions();
   return (
     <Background
@@ -32,7 +32,7 @@ function SearchByCategory() {
       <SearchInput />
 
 
-      <SearchCategorys />
+      <SearchCategorys {...props}/>
     </Background>
   );
 }
