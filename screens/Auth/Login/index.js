@@ -13,14 +13,19 @@ import Checkbox from "expo-checkbox";
 import CustomButton from "../../../components/CustomButton";
 import { assets } from "../../../assets";
 import Background from "../../../components/BackGround";
-const Login = () => {
+const Login = (props) => {
   const { height } = useWindowDimensions();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [isSelected, setSelection] = useState(false);
 
-  const onSignInPress = () => console.warn("Sign In");
-  const onSignUpPress = () => console.warn("Sign Up");
+  const onSignInPress = () => {
+    props.setIsLoggedIn(true);
+  };
+  const onSignUpPress = () => {
+    console.log(props);
+    props.navigation.navigate("Signup");
+  };
 
   return (
     <Background
@@ -28,8 +33,6 @@ const Login = () => {
       image={assets.splashBackground}
       gradients={["rgba(103,27,88,.8)", "transparent"]}
     >
-    <View style={styles.container}>
-      
       <View
         style={{
           alignItems: "center",
@@ -108,7 +111,6 @@ const Login = () => {
           onPress={onSignUpPress}
         />
       </View>
-    </View>
     </Background>
   );
 };
@@ -119,7 +121,7 @@ const styles = StyleSheet.create({
   container: {
     padding: 50,
   },
-  
+
   loginHeader: {
     fontFamily: "Regular",
     fontSize: 35,

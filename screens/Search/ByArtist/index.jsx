@@ -31,8 +31,8 @@ import {
        <ScreenHeader
           imageStyle={{ width: 138, height: 112 }}
           image={assets.logoSmall}
-          headerText="SEARCH ARTIST"
-          textStyle={{color:'red', fontSize:35}}
+          headerText="SEARCH BY ARTIST"
+          textStyle={{color:'red', fontSize:35, fontFamily: "Bold"}}
           height={height*0.2}
         />
        

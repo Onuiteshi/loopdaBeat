@@ -17,7 +17,7 @@ function SearchInput(props){
         backgroundColor:'white',
         borderRadius:10,
         lineHeight:17,
-        color:'black'
+        color:'black', fontFamily: "Regular"
       
     }}></TextInput>
          <Ionicons ios="ios-musical-notes" andriod="md-musical-notes" name="musical-notes" color={'white'} size={20}/>

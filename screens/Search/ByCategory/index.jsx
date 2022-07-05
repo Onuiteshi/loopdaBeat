@@ -24,7 +24,7 @@ function SearchByCategory() {
         imageStyle={{ width: 138, height: 112 }}
         image={assets.logoSmall}
         headerText="SEARCH CATEGORY"
-        textStyle={{color:'red', fontSize:35}}
+        textStyle={{color:'red', fontSize:35, fontFamily: "Bold", }}
         height={height*0.2}
       />
      

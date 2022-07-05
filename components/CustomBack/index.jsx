@@ -6,7 +6,7 @@ function CustomBack(props){
     return (
         <View style={{flexDirection:'row', width:'80%', marginTop:5, alignItems:'center'}}>
             <Ionicons ios="ios-chevron-back" andriod="md-chevron-back" name="chevron-back" color={'white'} size={20}/>
-            <Text style={{color:'white', fontSize:18}}>Back to {props.prev}</Text>
+            <Text style={{color:'white', fontSize:18, fontFamily: "Regular"}}>Back to {props.prev}</Text>
         </View>
     )
 }
