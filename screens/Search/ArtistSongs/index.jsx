@@ -31,7 +31,7 @@ import {
           imageStyle={{ width: 138, height: 112 }}
           image={assets.logoSmall}
           headerText={`${name.toUpperCase()} SONGS`}
-          textStyle={{color:'red', fontSize:35}}
+          textStyle={{color:'red', fontSize:35, fontFamily: "Bold"}}
           height={height*0.2}
         />
        

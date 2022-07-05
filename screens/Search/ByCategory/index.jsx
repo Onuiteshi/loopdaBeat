@@ -12,7 +12,7 @@ import Background from "../../../components/BackGround";
 import ScreenHeader from "../../../components/ScreenHeader";
 import SearchInput from "../../../components/SearchInput";
 import MyTabs from "../../../components/Tab";
-function SearchByCategory() {
+function SearchByCategory(props) {
   const { height } = useWindowDimensions();
   return (
     <Background
@@ -24,7 +24,7 @@ function SearchByCategory() {
         imageStyle={{ width: 138, height: 112 }}
         image={assets.logoSmall}
         headerText="SEARCH CATEGORY"
-        textStyle={{color:'red', fontSize:35}}
+        textStyle={{color:'red', fontSize:35, fontFamily: "Bold", }}
         height={height*0.2}
       />
      
@@ -32,7 +32,7 @@ function SearchByCategory() {
       <SearchInput />
 
 
-      <SearchCategorys />
+      <SearchCategorys {...props}/>
     </Background>
   );
 }

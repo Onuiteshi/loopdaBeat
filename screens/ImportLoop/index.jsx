@@ -20,12 +20,13 @@ function ImportLoop(){
         imageStyle={{ width: 138, height: 112 }}
         image={assets.logoSmall}
         headerText="IMPORT LOOP"
-        textStyle={{color:'white', fontSize:25, backgroundColor:'red', padding:10}}
+        textStyle={{color:'white', fontSize:25, backgroundColor:'red', padding:10 , fontFamily: "Bold",
+    }}
         height={height*0.22}
         />
         <View style={{width:'80%',marginTop:0.1*height, justifyContent:'flex-start'}}>
 
-        <Text style={{color:'white', fontSize:18}}>
+        <Text style={{color:'white', fontSize:18, fontFamily: "Regular"}}>
             Choose File
         </Text>
         </View>
@@ -72,7 +73,7 @@ function ImportLoop(){
                                                 alignItems:"center"
                                                 }}>
 
-                                <Text style={{fontSize:15,color:'white'}}>Import Loop</Text>
+                                <Text style={{fontSize:15,color:'white', fontFamily: "Regular"}}>Import Loop</Text>
                             </Pressable>
                     </LinearGradient>
 

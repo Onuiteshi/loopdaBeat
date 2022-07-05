@@ -4,10 +4,13 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 
 
 function SearchCategory(props){
+    const onCategoryPress = () => {
+        props.navigation.navigate(`SearchBy${props.text}`)
+    }
     return (
 
         <View style={{marginBottom:20, marginHorizontal:20}}>
-        <Pressable style={{flexDirection:'row',justifyContent:'space-between', alignItems:'center'}}>
+        <Pressable onPress={onCategoryPress} style={{flexDirection:'row',justifyContent:'space-between', alignItems:'center'}}>
        
             <View style={{flexDirection:'row', width:'30%', alignItems:'center', justifyContent:'space-around'}}>
                 <Ionicons ios="ios-musical-notes" andriod="md-musical-notes" name="musical-notes" color={'white'} size={20}/>

@@ -22,10 +22,11 @@ function LoopList() {
           backgroundColor: "red",
           padding: 10,
           margin: "auto",
+          fontFamily: "Bold",
         }}
         height={height * 0.22}
       />
-      <SongItems />
+      {/* <SongItems /> */}
     </Background>
   );
 }

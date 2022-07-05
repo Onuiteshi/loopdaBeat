@@ -17,6 +17,14 @@ function SignUp(props) {
   passwordRef = useRef("");
   rePasswordRef = useRef("");
 
+  const onCancelPress = () =>{
+    props.navigation.navigate('Login');
+  }
+  const onRegisterPress = () =>{
+    props.setIsLoggedIn(true);
+  }
+
+
   return (
     <Background
       style={{ justifyContent: "flex-start", padding: 40 }}
@@ -94,13 +102,13 @@ function SignUp(props) {
             end={{ x: 1, y: 1 }}
             style={styles.bottonGradient}
           >
-            <Pressable style={styles.buttonStyle}>
+            <Pressable style={styles.buttonStyle} onPress={onRegisterPress}>
               <Text style={styles.textStyle}>Register</Text>
             </Pressable>
           </LinearGradient>
         </View>
         <View>
-          <Pressable style={styles.buttonStyle}>
+          <Pressable style={styles.buttonStyle} onPress = {onCancelPress}>
             <Text style={styles.textStyle}>Cancel</Text>
           </Pressable>
         </View>
