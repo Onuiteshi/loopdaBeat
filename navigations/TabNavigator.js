@@ -8,6 +8,7 @@ import SearchByArtist from "../screens/Search/ByArtist";
 import SearchBySongs from "../screens/Search/ArtistSongs";
 import ImportLoop from "../screens/ImportLoop";
 import LoopList from "../screens/LoopList";
+import Landing from "../screens/LandingScreen";
 
 // import { assets } from "./assets";
 
@@ -16,7 +17,7 @@ const Tab = createBottomTabNavigator();
 const Tabs = () => {
   return (
     <Tab.Navigator
-      initialRouteName="Feed"
+      initialRouteName="Landing"
       screenOptions={{
         activeTintColor: "#fff",
         inactiveTintColor: "lightgray",
@@ -29,8 +30,8 @@ const Tabs = () => {
       }}
     >
       <Tab.Screen
-        name="Feed"
-        component={ImportLoop}
+        name="Landing"
+        component={Landing}
         options={{
           tabBarShowLabel: false,
           tabBarIcon: ({ color, size }) => (

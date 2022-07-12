@@ -91,7 +91,7 @@ function Landing(props) {
       >
         <Pressable
           style={{
-            borderRadius: "50%",
+            // borderRadius: "50%",
             width: 40,
             height: 40,
             justifyContent: "center",
@@ -108,7 +108,7 @@ function Landing(props) {
         </Pressable>
         <Pressable
           style={{
-            borderRadius: "50%",
+            // borderRadius: "50%",
             width: 40,
             height: 40,
             justifyContent: "center",
@@ -125,7 +125,7 @@ function Landing(props) {
         </Pressable>
         <Pressable
           style={{
-            borderRadius: "50%",
+            // borderRadius: "50%",
             width: 40,
             height: 40,
             backgroundColor: "blue",
@@ -143,7 +143,7 @@ function Landing(props) {
         </Pressable>
         <Pressable
           style={{
-            borderRadius: "50%",
+            // borderRadius: "50%",
             width: 40,
             height: 40,
             justifyContent: "center",
@@ -160,7 +160,7 @@ function Landing(props) {
         </Pressable>
         <Pressable
           style={{
-            borderRadius: "50%",
+            // borderRadius: "50%",
             width: 40,
             height: 40,
             justifyContent: "center",
