@@ -23,7 +23,7 @@ function ImportLoop({ navigation }) {
       gradients={["rgba(30, 34, 64, 0.8)", "rgba(30, 34, 64, 0.8)"]}
     >
       <ScreenHeader
-        imageStyle={{ width: 138, height: 112 }}
+        imageStyle={{ width: 120, height: 100 }}
         image={assets.logoSmall}
         headerText="IMPORT LOOP"
         textStyle={{
@@ -33,6 +33,7 @@ function ImportLoop({ navigation }) {
           padding: 10,
           fontFamily: "Bold",
         }}
+        navigation={navigation}
         height={height * 0.22}
       />
       <View

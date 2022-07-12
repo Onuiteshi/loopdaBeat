@@ -9,6 +9,7 @@ import SearchBySongs from "../screens/Search/ArtistSongs";
 import ImportLoop from "../screens/ImportLoop";
 import LoopList from "../screens/LoopList";
 import Landing from "../screens/LandingScreen";
+import Account from "../screens/Account";
 
 // import { assets } from "./assets";
 
@@ -46,8 +47,8 @@ const Tabs = () => {
         }}
       />
       <Tab.Screen
-        name="Notifications"
-        component={LoopList}
+        name="Account"
+        component={Account}
         options={{
           tabBarShowLabel: false,
           tabBarIcon: ({ color, size }) => (

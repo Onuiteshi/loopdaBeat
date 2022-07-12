@@ -13,7 +13,7 @@ function LoopList() {
       gradients={["rgba(30, 34, 64, 0.8)", "rgba(30, 34, 64, 0.8)"]}
     >
       <ScreenHeader
-        imageStyle={{ width: 138, height: 112 }}
+        imageStyle={{ width: 120, height: 100 }}
         image={assets.logoSmall}
         headerText="LOOP LIST"
         textStyle={{

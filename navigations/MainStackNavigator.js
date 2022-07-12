@@ -5,6 +5,7 @@ import Login from "../screens/Auth/Login";
 import { createStackNavigator } from "@react-navigation/stack";
 import Tabs from "./TabNavigator";
 import SignUp from "../screens/SignUp";
+import Draw from "./DrawerNavigator";
 
 const MainStack = createStackNavigator();
 
@@ -16,7 +17,7 @@ const MainStackNavigator = () => {
       screenOptions={{ headerShown: false }}
       initialRouteName={"Login"}
     >
-      <MainStack.Screen name="Tabs" component={Tabs} />
+      <MainStack.Screen name="Draw" component={Draw} />
       <MainStack.Screen name="Login" component={Login} />
       <MainStack.Screen name="SignUp" component={SignUp} />
     </MainStack.Navigator>
