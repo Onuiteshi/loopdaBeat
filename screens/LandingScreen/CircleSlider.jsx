@@ -3,7 +3,7 @@ import { PanResponder, Dimensions } from "react-native";
 import Svg, { Path, Circle, G, Text } from "react-native-svg";
 
 const CircleSlider = ({
-	angle=0,
+  angle = 0,
   btnRadius = 15,
   dialRadius = 130,
   dialWidth = 5,
@@ -19,9 +19,8 @@ const CircleSlider = ({
   xCenter = Dimensions.get("window").width / 2,
   yCenter = Dimensions.get("window").height / 2,
   onValueChange = (x) => x,
-  setAngle
+  setAngle,
 }) => {
-
   const panResponder = useRef(
     PanResponder.create({
       onStartShouldSetPanResponder: (e, gs) => true,
@@ -40,7 +39,7 @@ const CircleSlider = ({
         } else {
           setAngle(a);
         }
-		onValueChange(a)
+        onValueChange(a);
       },
     })
   ).current;
@@ -49,7 +48,7 @@ const CircleSlider = ({
     (angle) => {
       let r = dialRadius;
       let hC = dialRadius + btnRadius;
-      let a = ((angle -180) * Math.PI) / 180.0;
+      let a = ((angle - 180) * Math.PI) / 180.0;
 
       let x = hC + r * Math.cos(a);
       let y = hC + r * Math.sin(a);
