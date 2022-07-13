@@ -8,7 +8,6 @@ export const styles = StyleSheet.create({
     width: "100%",
     borderBottomColor: "#F59806",
     borderWidth: 4,
-    marginVertical: 15,
   },
 
   nav: {
