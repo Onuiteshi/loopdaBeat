@@ -21,7 +21,7 @@ const Login = (props) => {
 
   const onSignInPress = () => {
     // props.setIsLoggedIn(true);
-    props.navigation.navigate("Tabs");
+    props.navigation.navigate("Draw");
   };
   const onSignUpPress = () => {
     props.navigation.navigate("SignUp");

@@ -215,6 +215,7 @@ function Account(props) {
           fontFamily: "Bold",
         }}
         height={height * 0.22}
+        navigation={props.navigation}
       />
 
       <Modal
