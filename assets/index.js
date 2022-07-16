@@ -1,9 +1,14 @@
 export const assets = {
     Logo : require('./logo2.png'),
-    bg: require('./bg.png'),
+    Bg: require('./bg1.png'),
     logoLarge : require('./logolarge.png'),
     splashBackground : require('./splashbackground.png'),
     logoSmall : require('./loop_small_logo.png'),
+    ProfilePicture:require('./profile_picture.png'),
+    visa:require('./visa.png'),
+    master:require('./master.png'),
+    amex:require('./Amex.png'),
+    Discover:require('./Discover.png'),
     icons:{
         facebook : require('./icons/Facebook.svg'),
         playlist : require('./icons/Google Play Music.svg'),
