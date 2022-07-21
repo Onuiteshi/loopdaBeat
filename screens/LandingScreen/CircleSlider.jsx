@@ -5,7 +5,7 @@ import Svg, { Path, Circle, G, Text } from "react-native-svg";
 const CircleSlider = ({
   angle = 0,
   btnRadius = 15,
-  dialRadius = 130,
+  dialRadius = Dimensions.get("window").width*0.65/2,
   dialWidth = 5,
   meterColor = "#0cd",
   textColor = "#fff",
@@ -82,9 +82,9 @@ const CircleSlider = ({
   var endCoord = polarToCartesian(angle);
 
   return (
-    <Svg width={width} height={width / 2}>
+    <Svg width={width} height={width / 2.2}>
       <Circle
-        r={dR}
+        r={dR-5}
         cx={width / 2}
         cy={width / 2}
         stroke={strokeColor}
@@ -101,7 +101,7 @@ const CircleSlider = ({
         } 1 ${endCoord.x} ${endCoord.y}`}
       />
 
-      <G x={endCoord.x - bR} y={endCoord.y - bR}>
+      <G x={endCoord.x - bR+5} y={endCoord.y - bR}>
         <Circle
           r={bR}
           cx={bR}
